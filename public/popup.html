@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>OpenAI Task Breakdown</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <h1>Maestro Web</h1>
+    <form id="task-form">
+        <label for="objective">Objective:</label>
+        <textarea id="objective" name="objective"></textarea>
+        <label for="api-key">API Key:</label>
+        <input type="password" id="api-key" name="api-key">
+        <button type="submit">Submit</button>
+    </form>
+    <div id="progress-container">
+        <h2>Progress Logs</h2>
+        <pre id="progress-logs"></pre>
+    </div>
+    <div id="output-container">
+        <h2>Final Output</h2>
+        <button id="save-md">Save as Markdown</button>
+        <div id="final-output"></div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>

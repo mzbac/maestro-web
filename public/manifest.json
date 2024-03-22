@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "maestro web",
+    "version": "1.0",
+    "description": "A Chrome extension to break down tasks and display the results",
+    "permissions": [
+        "storage",
+        "tabs",
+        "webRequest",
+        "webRequestBlocking",
+        "<all_urls>"
+    ],
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": true
+    }
+}
